@@ -1,0 +1,84 @@
+/* body background mark up */
+body{background-color:rgba(0, 153, 204 , 1);
+}
+/* Note: Try to remove the following lines to see the effect of CSS positioning */
+.affix {
+	top: 0;
+	width: 100%;
+}
+.affix + .container-fluid {
+	padding-top:100px;
+}
+/* logo mark up */
+#logo{height:100px;     
+	width:120px;
+	margin-bottom:5px;
+z-index:-4;}
+
+/* nav mark up style */
+#nav{z-index:4;
+background-color:#ffffff;}
+
+#heading{font-size:25px;
+	font-family:Comic Sans MS;
+	color:#423;
+   text-shadow:2px 2px #982;
+}
+#subhead{font-family:Cinzel Decorative;}
+/* this is for image sliding */
+#img{z-index:-1;}
+.imageClass{
+	display : block;
+	height : 500px !important;
+	width : 1350px !important;	
+     }
+#img{box-radius:2px; 
+box-shadow: 0, 20px ,10px 0 #897 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width:100%;
+	margin: auto;	
+}
+/*   play store logo */
+#playstore{height:34px; 
+	width:80px;
+	margin-left:35%;
+	margin-bottom:-1px;
+}
+
+/*<!-- google signup-->*/
+
+#sign1,#sign2,#sign3,#sign4{margin-top:10px;}
+/* pop up model */
+.city {display:none}
+#login{margin-top:40px}
+#logindiv{height:40px;
+	width:100px;
+	font-size:20px;
+    margin-left:45%;
+	}
+#logindiv:hover{width:200px;
+margin-left:40%;}
+/* slide toggle effect */
+.image-frame {position: relative;
+	margin: 5px;
+	color: #333;
+	z-index:4;
+}
+.image-frame .image-caption {
+	display: none;
+	opacity: 0.3;
+	background:#000000;
+	width: 2900px;
+	height:500px;
+	position: absolute;
+	color:#ffffff;
+	bottom: 0px;
+	padding: 5px;
+	z-index:4;
+}
+#contact{float:right;
+	     color:blue;
+		 text-align:right;}
+
+ 

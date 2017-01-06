@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>
+	</title>
+	<script type="text/javascript">
+    function CheckSearchString() {
+        if ($('.searchtexbox_header').val().trim() != '' && $('.searchtexbox_header').val() != 'Enter Search Text. . .')
+        { return true; }
+        else
+        { alert('Please enter search text !'); $('.searchtexbox_header').focus(); return false; }
+    }
+
+    $(document).ready(function() {
+
+        $('.searchtexbox_header').bind("focusin", function(event) {
+            event.stopPropagation();
+            if ($(this).val() == 'Enter Search Text. . .') {
+                $('.searchtexbox_header').val("");
+            }
+        });
+
+        $('.searchtexbox_header').bind("focusout", function(event) {
+            //event.stopPropagation();
+            if ($(this).val() == "") {
+                $('.searchtexbox_header').val("Enter Search Text. . .");
+                $('.searchtexbox_header').animate({ width: "0px" });
+
+                $('.main_searchbox').hide();
+                $('.main_searchbox').css("border", "none");
+                $('.search_icon_header').show();
+            }
+        });
+
+
+
+        $('.search_icon_header').click(function(event) {
+
+            event.stopPropagation();
+            $('.searchtexbox_header').animate({ width: "140px" });
+            $('.main_searchbox').show();
+            $('.main_searchbox').css("border", "1px solid black");
+            $('.search_icon_header').hide();
+        });
+
+        $('html').click(function(e) {
+            var $target = $(e.target);
+            if ($target.closest('#ctl00_CPHHeader_he1_txtSearch').length == 0) {
+                if ($('.searchtexbox_header').val() == "") {
+                    $('.searchtexbox_header').val("Enter Search Text. . .");
+                }
+                $('.searchtexbox_header').animate({ width: "0px" });
+
+                $('.main_searchbox').hide();
+                $('.main_searchbox').css("border", "none");
+                $('.search_icon_header').show();
+            }
+
+
+        });
+
+
+
+
+    });
+</script>
+	</head>
+	<body>
+
+
+
+<div class="search_wrapper" id="idSearchKey">
+    <div id="ctl00_CPHHeader_he1_pnlheadersearch" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_CPHHeader_he1_lnkbtnSearch&#39;)">
+	
+        <div class="main_searchbox clearfix" style="display: none">
+            <div id="ctl00_CPHHeader_he1_searchPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl00_CPHHeader_he1_lnkbtnSearch&#39;)">
+		
+                <div class="clearfix float_left">
+                    <input name="ctl00$CPHHeader$he1$txtSearch" type="text" value="Enter Search Text. . ." id="ctl00_CPHHeader_he1_txtSearch" class="searchtexbox_header" />
+                </div>
+                <a onclick="return CheckSearchString();" id="ctl00_CPHHeader_he1_lnkbtnSearch" class="searchbtn_header" href="javascript:__doPostBack(&#39;ctl00$CPHHeader$he1$lnkbtnSearch&#39;,&#39;&#39;)">&nbsp;</a>
+                    <input type="hidden" name="ctl00$CPHHeader$he1$hd" id="ctl00_CPHHeader_he1_hd" />
+            
+	</div>
+        </div>
+    
+</div>
+    <div id="ctl00_CPHHeader_he1_search_icon_new">
+	
+        <div class="search_icon_header">
+            <div class="searchbtn_header">
+            </div>
+        </div>
+    
+</div>
+</div>
+	</body>

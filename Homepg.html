@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		<link rel="stylesheet" href="styles.css">		
+	</head>
+	<body>	
+		<nav id="nav" class="navbar navbar" data-spy="affix" data-offset-top="210">
+		<img id="logo" src="Apple.jpg"/>  <span id="heading">Career Assist</span>			
+		<a href="https://play.google.com/store/apps/details?id=com.virtualmaze.careerassist&hl=en">	<img id="playstore" src="playstore.png" > </a> 			
+			<button id="signup" onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary">sign in</button>					
+			<div id="id01" class="w3-modal">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom">
+					<header class="w3-container w3-pink "> 
+						<span onclick="document.getElementById('id01').style.display='none'" 
+						class="w3-closebtn w3-padding-top">&times;</span>
+						<img id="sign1"  src="google.png">
+						<img id="sign2" src="fb.png">
+						<img id="sign3" src="linked-in.png">
+						<img id="sign4" src="twitter.png">
+					</header>										
+					<form>
+						<div id="login" class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							<input id="email" type="text" class="form-control" name="email" placeholder="Email">
+						</div><br>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+							<input id="password" type="password" class="form-control" name="password" placeholder="Password">							
+						</div>
+						<div class="col-sm-12">
+							<br><br>
+							<label><input type="checkbox"> Remember me</label><br><br>
+							<button id="logindiv"  class="btn btn-primary"> Sign in </button>	
+						</div>
+						<br>
+						<div class="col-sm-offset-2 col-sm-10">
+							<div class="checkbox">								
+							</div>
+						</div>
+					</form>					
+					<div class="w3-container w3-light-grey w3-padding">
+						<button class="w3-btn w3-right w3-white w3-border" 
+						onclick="document.getElementById('id01').style.display='none'">Close</button>
+					</div>
+				</div>
+			</div>			
+			<!-- javascript for popup modal -->			
+			<script src="imagesliding.js"></script>										
+			<button class="btn btn-default" ><a href="aboutus.html">About us</a></button>
+			<div id="search" class="container">
+				<script src="search.js"></script>
+				<gcse:search>	
+				</gcse:search>				
+			</div>
+            <br>
+			<span id="subhead">VirtualMaze Education</span>
+			<span id="contact" style="color:blue">Contact:+91-9177432785</span>		
+		</nav>		
+		<!-- image sliding mark up design -->	
+		<div id="img" >
+			<div >
+				<br>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>					
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="image-frame">							
+								<img src="img1.jpg"  class="imageClass">
+								<div class="image-caption">
+									<script src="image.js"></script>
+									
+									<h2>Slide1</h2>
+									Mouse over Slide 1 to view the caption.
+								</div>
+							</div>												
+						</div>						
+						<div class="item">
+							<div class="image-frame">
+								
+								<img src="img2.jpg"  class="imageClass">
+								<div class="image-caption">
+									<script src="image.js"></script>								
+									<h2>Slide1</h2>
+									Mouse over Slide 1 to view the caption.
+								</div>
+							</div>
+						</div>						
+						<div class="item">
+							<div class="image-frame">
+								<img src="img3.jpg"  class="imageClass">
+								<div class="image-caption">
+									<script src="image.js"></script>								
+									<h2>Slide1</h2>
+									Mouse over Slide 1 to view the caption.
+								</div>
+							</div>
+						</div>						
+						<div class="item">
+							<div class="image-frame">
+								<div class="thumb">
+									<img src="img4.jpg" class="imageClass">
+								</div>
+								<div class="image-caption">
+									<script src="image.js"></script>							
+									<h2>Slide1</h2>
+									Mouse over Slide 1 to view the caption.
+								</div>
+							</div>
+						</div>
+					</div>					
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+				</a>
+				</div>
+				</div> 
+				</div>
+				<br>
+				<br>
+				<div class="container-fluid"><br>
+				<div class="container" style="color:white">
+				<fieldset> <legend> CAREERS </legend>
+				<span>Career Assist - Assisting you to develop your skills and start your career, by providing competitive exam questions, test reports and job alerts.
+				This app helps you to practice for competitive exams.<br>
+				It also helps you to find your career by providing job alerts. 
+				It contains 25000+ questions on different categories like Aptitude, Logical Reasoning, General Knowledge, Computer Programming, C, Java, C++, Verbal Ability, English Comprehension, etc,.
+				</span>					
+				<h2><u>Features:</u></h2>
+				<p>
+				- 25000+ questions. It is getting increased day by day <br>
+				- Detailed explanations for answers<br>
+				- Connects students and college placement officers. So the students can get job alerts from their placement officers also <br>
+				- Can view your test summary in graphical format <br>
+				- Public job alerts<br>
+				- Search and share jobs to your friends<br>
+				- Lot more features are coming soon<br>
+				</p>
+				</fieldset>
+				<div>
+				</div>
+				</body>
+				</html>	
+				
+								
