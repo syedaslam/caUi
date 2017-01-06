@@ -10,8 +10,8 @@ body{background-color:rgba(0, 153, 204 , 1);
 	padding-top:100px;
 }
 /* logo mark up */
-#logo{height:100px;     
-	width:120px;
+#logo{height:80px;     
+	width:300px;
 	margin-bottom:5px;
 z-index:-4;}
 
@@ -28,12 +28,17 @@ background-color:#ffffff;}
 /* this is for image sliding */
 #img{z-index:-1;}
 .imageClass{
+	margin-top:50px;
 	display : block;
-	height : 500px !important;
-	width : 1350px !important;	
+	height : 400px !important;
+	width : 1415px !important;
+	margin-bottom:50px;
+	border:2px solid #347;
+	border-radius:15px;
      }
 #img{box-radius:2px; 
 box-shadow: 0, 20px ,10px 0 #897 }
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
 	width:100%;
@@ -42,7 +47,7 @@ box-shadow: 0, 20px ,10px 0 #897 }
 /*   play store logo */
 #playstore{height:34px; 
 	width:80px;
-	margin-left:35%;
+	margin-left:50%;
 	margin-bottom:-1px;
 }
 
@@ -70,7 +75,7 @@ margin-left:40%;}
 	opacity: 0.3;
 	background:#000000;
 	width: 2900px;
-	height:500px;
+	height:400px;
 	position: absolute;
 	color:#ffffff;
 	bottom: 0px;
